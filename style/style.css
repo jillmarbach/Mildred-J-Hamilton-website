@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: initial;
+	padding: initial;
+	font-size: 62.5%;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section,
+summary {
+  display: block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	padding: 0;
+}
+
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.purple {
+	background: #B4BAD1;
+}
+
+.header {
+	display: flex;
+	padding: 2.5rem;
+	align-items: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.header img {
+	min-width: 25rem;
+}
+
+.header a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.9rem;
+	font-family: 'Baskerville', serif;
+	flex-grow: 1;
+	text-align: center;
+	align-items: center;
+	padding: 2.5rem;
+	flex-shrink: 0;
+}
+
+.header a:hover {
+	color: #535B9B;
+}
+
+nav p:nth-child(n+2) {
+	padding: 1rem 2rem;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+}
+
+h1 {
+	font-family: 'Baskerville', serif;
+	font-size: 1.7rem;
+	font-weight: 600;	
+	text-align: center;
+}
+
+.first-image {
+	background-image: url("header.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 39.3vh 50vw; 
+}
+
+.bio {
+	display: grid;
+	justify-content: center;
+	padding: 3rem;
+	max-width: 55rem;
+	margin: 0 auto;
+}
+
+.bio img {
+	max-width: 30rem;
+	padding: 0 3rem 0 0;
+	margin: 0 auto;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: center;
+	grid-column-gap: 10rem;
+	padding: 0 3rem;
+}
+
+.buttons img {
+	width: 20rem;
+}
+
+.buttons img:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+.deeds {
+	grid-column-start: 2;
+}
+
+.deeds-p {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	text-align: center;
+	font-family: 'Baskerville', serif;
+	font-size: 1.7rem;
+}
+
+.real-estate-p {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	text-align: center;
+	font-family: 'Baskerville', serif;
+	font-size: 1.7rem;
+}
+
+form {
+	padding: 3rem;
+	border: none;
+	max-width: 70rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+input, textarea {
+	font-family:  'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+
+.fname {
+	width: 48%;
+	margin: 1rem 1rem 1rem 0;
+}
+
+.lname {
+	width: 49%;
+	margin: 1rem 0;
+}
+
+textarea {
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.email {
+	width: 100%;
+}
+
+.submit {
+	font-family:  'Open Sans', sans-serif;
+	font-size: 1.2rem;
+}
+
+button {
+ 	text-decoration: none;
+	padding: .8rem 1.1rem;
+	background-color: #535B9B;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: none;
+	transition: 0.3s;
+}
+
+button:hover {
+	opacity: 0.6;
+}
+
+footer {
+	background: #B4BAD1;
+	margin: 0 auto;
+	margin-top: 0;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.social-media a {
+	display: block;
+	margin: 0 auto;
+	max-width: 3rem;
+}
+
+.social-media img {
+	width: 100%;
+}
+
+/* Contact Page */
+
+.contact-image {
+	background-image: url("contact-image.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	padding: 8rem 0;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.contact-buttons {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: center;
+	grid-row-gap: 3rem;
+	padding: 3rem 3rem;
+	align-items: center;
+}
+
+.contact-buttons img {
+	width: 10rem;
+}
+
+.contact-buttons p {
+	padding: 0 5rem 0 1.5rem;
+	font-size: 1.7rem;
+	margin: 0;
+}
+
+/* 
+Desktop Screens
+ */
+
+@media (min-width: 700px) {
+	.header {
+		display: flex;
+		padding: 2.5rem;
+		align-items: center;
+		max-width: 115rem;
+		margin: 0 auto;
+		flex-wrap: nowrap;
+	}
+	
+	.header img {
+		min-width: 22rem;
+	}
+	
+	.bio {
+		display: grid;
+		justify-content: center;
+		padding: 2rem;
+		max-width: 80rem;
+		margin: 0 auto;
+	}
+	
+	.bio h1 {
+		grid-column-start: 2;
+		align-self: end;
+	}
+	
+	.bio p {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		margin: 0;
+	}
+	
+	.bio img {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		max-width: 25rem;
+		padding: 0 3rem 0 0;
+	}
+	
+	.buttons {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		justify-content: center;
+		grid-column-gap: 10rem;
+		padding: 3rem 3rem 0 3rem;
+	}
+	
+	.fname {
+		width: 49%;
+		margin: 1rem 1rem 1rem 0;
+	}
+	
+	form {
+		padding: 1rem;
+	}
+
+	.contact-buttons {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		justify-content: center;
+		grid-row-gap: 3rem;
+		padding: 3rem 3rem;
+		align-items: center;
+	}
+	
+	.contact-buttons img {
+		width: 10rem;
+	}
+}
