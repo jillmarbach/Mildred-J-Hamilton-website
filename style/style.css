@@ -187,6 +187,7 @@ button {
 
 button:hover {
 	opacity: 0.6;
+	cursor: pointer;
 }
 
 footer {
@@ -195,6 +196,7 @@ footer {
 	margin-top: 0;
 	text-align: center;
 	padding: 2rem 0;
+	line-break: strict;
 }
 
 .social-media a {
@@ -236,19 +238,21 @@ footer {
 
 .contact-buttons img {
 	min-width: 7rem;
+	max-width: 10rem;
+	margin: 0 auto;
 }
 
 .contact-buttons p {
-	padding: 0 5rem 0 1.5rem;
+	padding: 0;
 	font-size: 1.7rem;
 	margin: 0;
+	text-align: center;
 }
+
+/* Current Clients */
 
 .seller-docs, .buyer-docs {
 	text-align: center;
-	display: grid;
-	justify-content: center;
-	grid-column-gap: 5rem;
 	padding: 1rem 0 0;
 }
 
@@ -264,6 +268,21 @@ footer {
 
 .center {
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #535B9B;
+}
+
+a:hover {
+	color: #B4BAD1;
+}
+
+.stars {
+	max-width: 25rem;
+	margin: 0 auto;
+	padding-top: 2rem;
 }
 
 /* 
@@ -342,6 +361,21 @@ Desktop Screens
 	
 	.contact-image {
 		padding: 8rem 0;
+}
+
+	.contact-buttons p {
+		padding: 0 5rem 0 1.5rem;
+		font-size: 1.7rem;
+		margin: 0;
+		text-align: left;
+	}
+	
+	.seller-docs, .buyer-docs {
+		text-align: center;
+		display: grid;
+		justify-content: center;
+		grid-column-gap: 5rem;
+		padding: 1rem 0 0;
 }
 }
 
