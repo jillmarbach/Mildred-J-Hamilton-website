@@ -39,6 +39,7 @@ a {
 	align-items: center;
 	margin: 0 auto;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
 .header img {
@@ -48,7 +49,7 @@ a {
 .header a {
 	text-decoration: none;
 	color: #000000;
-	font-size: 1.9rem;
+	font-size: 2.2rem;
 	font-family: 'Baskerville', serif;
 	flex-grow: 1;
 	text-align: center;
@@ -88,6 +89,16 @@ h1 {
     padding: 39.3vh 50vw; 
 }
 
+.pitch {
+	background: #B4BAD1;
+}
+
+.pitch p {
+	font-size: 1.7rem;
+	padding: 2rem 3.5rem;
+	max-width: 70rem;
+}
+
 .bio {
 	display: grid;
 	justify-content: center;
@@ -110,11 +121,6 @@ h1 {
 
 .buttons img {
 	width: 20rem;
-}
-
-.buttons img:hover {
-	opacity: 0.7;
-	transition: 0.3s;
 }
 
 .deeds {
@@ -199,6 +205,14 @@ footer {
 	line-break: strict;
 }
 
+footer a {
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: white;
+}
+
 .social-media a {
 	display: block;
 	margin: 0 auto;
@@ -210,6 +224,16 @@ footer {
 }
 
 /* Contact Page */
+
+h2 {
+	text-align: center;
+	font-size: 3.2rem;
+	font-family: 'Baskerville', serif;
+	font-weight: 400;
+	margin: 0;
+	padding-top: 2rem;
+	text-decoration: underline #535B9B;
+}
 
 .contact-image {
 	background-image: url("contact-image.jpg");
@@ -259,6 +283,7 @@ footer {
 .seller-docs img, .buyer-docs img {
 	width: 7rem;
 	margin: 0 auto;
+	display: inline-block;
 }
 
 .seller-docs p, .buyer-docs p {
@@ -285,6 +310,89 @@ a:hover {
 	padding-top: 2rem;
 }
 
+label {
+	font-family:  'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	padding: 0 0 .5rem 1rem;
+	display: block;
+	margin-left: 2.5rem;	
+}
+
+.rtf {
+	margin: 0 auto;
+	padding: 0 3rem;
+	display: block;
+	text-align: left;
+}
+
+#rtfcalc {
+	padding: 0;
+}
+
+input {
+	float: left;
+}
+
+.calconic-calculator {
+	padding: 2rem;
+}
+
+.current-header {
+	background-image: url(current-header-2.jpg);
+	background-size: cover;
+	background-position: 50% 33%;
+	padding: 12rem;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.current-header h2 {
+	color: white;
+	padding: 0 0 2rem;
+}
+
+.flex a {
+	background: white;
+	font-size: 2rem;
+	text-decoration: underline;
+	padding: 2rem;
+	font-family: 'Baskerville', serif;
+}
+
+#links {
+	border: solid .5rem #535B9B;
+	margin: 1rem 3rem;
+}
+
+#links h1 {
+	color: white;
+	background: #535B9B;
+	padding: 1rem;
+	margin: 0;
+}
+
+#links a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	display: block;
+	text-align: center;
+	padding: 1rem 0 0;
+}
+
+#links p {
+	text-align: center;
+	padding: 0;
+}
+
+#links p:last-child {
+	padding-bottom: 1rem;
+}
+
+
 /* 
 Desktop Screens
  */
@@ -294,9 +402,8 @@ Desktop Screens
 		display: flex;
 		padding: 2.5rem;
 		align-items: center;
-		max-width: 115rem;
+		width: 70%;
 		margin: 0 auto;
-		flex-wrap: nowrap;
 	}
 	
 	.header img {
@@ -334,7 +441,7 @@ Desktop Screens
 		grid-template-columns: repeat(2, auto);
 		justify-content: center;
 		grid-column-gap: 10rem;
-		padding: 3rem 3rem 0 3rem;
+		padding: 0 3rem;
 	}
 	
 	.fname {
@@ -343,7 +450,7 @@ Desktop Screens
 	}
 	
 	form {
-		padding: 1rem;
+		padding: 2rem 1rem 1rem;
 	}
 
 	.contact-buttons {
@@ -361,7 +468,7 @@ Desktop Screens
 	
 	.contact-image {
 		padding: 8rem 0;
-}
+	}
 
 	.contact-buttons p {
 		padding: 0 5rem 0 1.5rem;
@@ -376,7 +483,11 @@ Desktop Screens
 		justify-content: center;
 		grid-column-gap: 5rem;
 		padding: 1rem 0 0;
-}
+	}
+
+	.rtf {
+		max-width: 65rem;
+	}
 }
 
 @media (max-width: 467px) {
