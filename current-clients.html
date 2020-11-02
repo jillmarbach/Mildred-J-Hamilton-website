@@ -6,6 +6,7 @@
 	<title>Current Clients | Mildred J. Hamilton, Esquire</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -23,34 +24,55 @@
 </div>
 <div class="current-header">
 	<h2>Current Clients</h2>
-	<div class="flex">
+	<nav class="flex" id="flex">
 		<a href="#seller-docs">Seller Documents</a>
 		<a href="#buyer-docs">Buyer Documents</a>
 		<a href="#rtfcalc">Realty Transfer Fee Calculator</a>
 		<a href="#links">Helpful Links</a> 
 	</div>
+	<button class="hamburger" type="button" data-toggle="collapse" data-target="#flex"
+    aria-controls="#flex" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><img src="bars-solid.svg"></i></span></button>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementbyId("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 <p class="center">Below are documents you may need if you're buying or selling a property in New Jersey. Click the icon to download that document.</p>
 <div id="seller-docs"><h1>Documents for Clients Selling a Property</h1>
 <div class="seller-docs">
-	<img src="doc.svg" alt="document icon">
-	<p>Seller Introduction Letter</p>
-	<a href="Seller-Questionnaire.pdf" target="_blank" download><img src="doc.svg" alt="document icon"></a>
-	<p>Seller Questionnaire</p>
-	<a href="Short_Sale_Package_Checklist_with_Sample_Letters.pdf" download target="blank"><img src="doc.svg" alt="document icon"></a>
-	<p>Short Sale Checklist</p>
-	<a href="Authorization.pdf" download target="blank"><img src="doc.svg" alt="document icon"></a>
-	<p>Payoff Authorization</p>
-	<a href="#" download target="blank"><img src="doc.svg" alt="document icon"></a>
-	<p>Bulk Sale Notice</p>
+	<div>
+		<img src="doc.svg" alt="document icon">
+		<p>Seller Introduction Letter</p>
+	</div><div>
+		<a href="Seller-Questionnaire.pdf" target="_blank" download><img src="doc.svg" alt="document icon"></a>
+		<p>Seller Questionnaire</p>
+	</div><div>
+		<a href="Short_Sale_Package_Checklist_with_Sample_Letters.pdf" download target="blank"><img src="doc.svg" alt="document icon"></a>
+		<p>Short Sale Checklist</p>
+	</div><div>
+		<a href="Authorization.pdf" download target="blank"><img src="doc.svg" alt="document icon"></a>
+		<p>Payoff Authorization</p>
+	</div><div>
+		<a href="#" download target="blank"><img src="doc.svg" alt="document icon"></a>
+		<p>Bulk Sale Notice</p>
+	</div>
 </div></div>
 <p class="center">Download all seller files as a .zip</p>
 <div id="buyer-docs"><h1>Documents for Clients Purchasing a Property</h1>
 <div class="buyer-docs">
-	<img src="doc.svg" alt="document icon">
-	<p>Purchaser Introduction Letter</p>
-	<a href="Purchaser-Questionnaire.pdf" target="_blank" download><img src="doc.svg" alt="document icon"></a>
-	<p>Purchaser Questionnaire</p>
+	<div>
+		<img src="doc.svg" alt="document icon">
+		<p>Purchaser Introduction Letter</p>
+	</div><div>
+		<a href="Purchaser-Questionnaire.pdf" target="_blank" download><img src="doc.svg" alt="document icon"></a>
+		<p>Purchaser Questionnaire</p>
+	</div>
 </div></div>
 <p class="center">Download all seller files as a .zip</p>
 <h1>Realty Transfer Fee Calculator</h1>
@@ -59,34 +81,34 @@
 	<label class="radiowrap" data-radio="standardcalc"><input type="radio" id="standard" name="exemption" value="Standard transactions and new construction"><label for="standard">Standard transactions and new construction</label></label>
 </div>
 <div class="standardcalc">
-	<div class="calconic-calculator"  data-calculatorid="5f988817c334d70029a45bcd" id="standard"></div>
-		<script>
-		  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
-		  ce=d.createElement, gt=d.getElementsByTagName,
-		  id="calconic_", b="https://cdn.calconic.com/static/js/";
-		  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
-		  j.dataset.calconic=true;
-		  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
-		})();
-		</script>
+	<div class="calconic-calculator"  data-calculatorid="5fa041dd5f691b002af75ad6"></div>
+	<script>
+	  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+	  ce=d.createElement, gt=d.getElementsByTagName,
+	  id="calconic_", b="https://cdn.calconic.com/static/js/";
+	  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+	  j.dataset.calconic=true;
+	  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+	})();
+	</script>
 </div>
 <div class="rtf">
 	<label class="radiowrap" data-radio="partialcalc"><input type="radio" id="partial" name="exemption" value="Partial exemptions, including senior citizens aged 62 or older; blind persons; disabled persons; or on property that is low and moderate income housing"><label for="partial">Partially exempt, including senior citizens aged 62 or older; blind persons; disabled persons; and on property that is low and moderate income housing</label></label>
 </div>
 <div class="partialcalc">
-<div class="calconic-calculator"  data-calculatorid="5f9889d7c334d70029a45bce"></div>
-<script>
-  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
-  ce=d.createElement, gt=d.getElementsByTagName,
-  id="calconic_", b="https://cdn.calconic.com/static/js/";
-  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
-  j.dataset.calconic=true;
-  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
-})();
-</script>
+	<div class="calconic-calculator"  data-calculatorid="5fa046835f691b002af75aee"></div>
+	<script>
+	  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+	  ce=d.createElement, gt=d.getElementsByTagName,
+	  id="calconic_", b="https://cdn.calconic.com/static/js/";
+	  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+	  j.dataset.calconic=true;
+	  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+	})();
+	</script>
 </div>
 </form>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
 <script>

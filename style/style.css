@@ -232,7 +232,6 @@ h2 {
 	font-weight: 400;
 	margin: 0;
 	padding-top: 2rem;
-	text-decoration: underline #535B9B;
 }
 
 .contact-image {
@@ -345,22 +344,25 @@ input {
 }
 
 .flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.flex a {
+	display: none;
+}
+
+.hamburger {
+  background: #535B9B;
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 25rem;
 }
 
 .current-header h2 {
 	color: white;
 	padding: 0 0 2rem;
-}
-
-.flex a {
-	background: white;
-	font-size: 2rem;
-	text-decoration: underline;
-	padding: 2rem;
-	font-family: 'Baskerville', serif;
 }
 
 #links {
@@ -476,17 +478,35 @@ Desktop Screens
 		margin: 0;
 		text-align: left;
 	}
-	
+
 	.seller-docs, .buyer-docs {
 		text-align: center;
-		display: grid;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		grid-column-gap: 5rem;
-		padding: 1rem 0 0;
 	}
 
 	.rtf {
 		max-width: 65rem;
+	}
+	
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.flex a {
+		display: block;
+		background: white;
+		font-size: 2rem;
+		text-decoration: underline;
+		padding: 2rem;
+		font-family: 'Baskerville', serif;
+	}
+	
+	.hamburger {
+		display: none;
 	}
 }
 
