@@ -504,10 +504,6 @@ Desktop Screens
 		padding: 2rem;
 		font-family: 'Baskerville', serif;
 	}
-	
-	.hamburger {
-		display: none;
-	}
 }
 
 @media (max-width: 467px) {
