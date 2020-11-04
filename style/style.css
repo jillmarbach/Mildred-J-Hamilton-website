@@ -352,14 +352,6 @@ input {
 	display: none;
 }
 
-.hamburger {
-  background: #535B9B;
-  display: block;
-  position: absolute;
-  right: 1rem;
-  top: 25rem;
-}
-
 .current-header h2 {
 	color: white;
 	padding: 0 0 2rem;
