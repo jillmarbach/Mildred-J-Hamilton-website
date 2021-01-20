@@ -360,6 +360,7 @@ input {
 #links {
 	border: solid .5rem #535B9B;
 	margin: 1rem 3rem;
+	display: block;
 }
 
 #links h1 {
@@ -372,9 +373,12 @@ input {
 #links a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
-	display: block;
-	text-align: center;
+	display: inline-block;
 	padding: 1rem 0 0;
+}
+
+#links div {
+	text-align: center;
 }
 
 #links p {
@@ -496,6 +500,7 @@ Desktop Screens
 		padding: 2rem;
 		font-family: 'Baskerville', serif;
 	}
+	
 }
 
 @media (max-width: 467px) {
