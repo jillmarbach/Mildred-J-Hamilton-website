@@ -67,7 +67,7 @@ nav p:nth-child(n+2) {
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 1.5rem;
 	max-width: 55rem;
 	margin: 0 auto;
