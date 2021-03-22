@@ -223,6 +223,10 @@ footer a:hover {
 	width: 100%;
 }
 
+.disclaimer {
+	padding-bottom: 1.5rem;
+}
+
 /* Contact Page */
 
 h2 {
@@ -270,6 +274,11 @@ h2 {
 	font-size: 1.7rem;
 	margin: 0;
 	text-align: center;
+}
+
+.oak-street img {
+	max-height: 55rem;
+	margin: 0 auto;
 }
 
 /* Current Clients */
