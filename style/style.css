@@ -69,7 +69,7 @@ nav p:nth-child(n+2) {
 p {
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 1.5rem;
-	max-width: 55rem;
+	max-width: 57rem;
 	margin: 0 auto;
 	padding: 1rem;
 }
@@ -120,7 +120,8 @@ h1 {
 }
 
 .buttons img {
-	width: 20rem;
+	width: 12rem;
+	margin: 0 auto;
 }
 
 .deeds {
@@ -283,18 +284,18 @@ h2 {
 
 /* Current Clients */
 
-.seller-docs, .buyer-docs {
+.seller-docs, .buyer-docs, .estate-docs {
 	text-align: center;
 	padding: 1rem 0 0;
 }
 
-.seller-docs img, .buyer-docs img {
+.seller-docs img, .buyer-docs img, .estate-docs img {
 	width: 7rem;
 	margin: 0 auto;
 	display: inline-block;
 }
 
-.seller-docs p, .buyer-docs p {
+.seller-docs p, .buyer-docs p, estate-docs p {
 	grid-row-start: 2;
 	width: 15rem;
 }
@@ -399,6 +400,28 @@ input {
 	padding-bottom: 1rem;
 }
 
+/*
+Estate Planning Clients
+*/
+
+.estate-header {
+	background-image: url(estate-header.jpg);
+	background-size: cover;
+	background-position: 50% 40%;
+	padding: 10rem;
+}
+
+.estate-header h2 {
+	color: white;
+}
+
+.introduction {
+	display: block;
+	margin: 0 auto;
+	font-size: 1.6rem;
+	text-align: center;
+	max-width: 63rem;
+}
 
 /* 
 Desktop Screens
@@ -409,13 +432,14 @@ Desktop Screens
 		display: flex;
 		padding: 2.5rem;
 		align-items: center;
-		width: 70%;
+		width: 85%;
 		margin: 0 auto;
 	}
 	
 	.header img {
 		min-width: 22rem;
 	}
+	
 	
 	.bio {
 		display: grid;
@@ -510,6 +534,13 @@ Desktop Screens
 		font-family: 'Baskerville', serif;
 	}
 	
+	.estate-header {
+		padding: 15rem;
+	}
+	
+	.buttons img {
+		width: 20rem;
+	}
 }
 
 @media (max-width: 467px) {
@@ -520,5 +551,9 @@ Desktop Screens
 	
 	.lname {
 		width: 100%;
+	}
+	
+	h2 {
+		text-align: center;
 	}
 }
