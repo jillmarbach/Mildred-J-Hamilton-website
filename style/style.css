@@ -105,6 +105,11 @@ h1 {
 	padding: 3rem;
 }
 
+.biopic {
+	max-width: 24rem;
+	margin: 0 auto;
+}
+
 .bio img {
 	max-width: 30rem;
 	padding: 0 3rem 0 0;
